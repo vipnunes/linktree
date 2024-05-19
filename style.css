@@ -11,9 +11,10 @@
 }
 
 body{
-    background-color: #d8cfe3;
-    /* try this purple */
-    /* background-color: #d8cfe3; */
+    background-image: url('https://vipnunes.com/files/gra.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'VT323', monospace;
     font-size: 16px;
     font-weight: 400;
