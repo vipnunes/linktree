@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: var(--background-color);
+    background-color: #d8cfe3;
     /* try this purple */
     /* background-color: #d8cfe3; */
     font-family: 'VT323', monospace;
