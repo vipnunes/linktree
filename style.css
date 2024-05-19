@@ -6,7 +6,7 @@
     --background-color: #fcf7e9;
     --link-item-color: #efe7d2;
     --font-heading-color: #ffffff;
-    --font-body-color: #000000;
+    --font-body-color: #ffffff;
 
 }
 
@@ -169,7 +169,6 @@ p{
 
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: var(--font-heading-color);
 }
 
 .link-header{
