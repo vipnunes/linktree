@@ -67,6 +67,27 @@ p{
 
 /* about */
 
+.poweredBy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.poweredBy a {
+  background-color: white;
+  color: var(--black);
+  text-decoration: none;
+  padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 7px;
+  font-family: system-ui, -apple-system, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji !important;
+}
+
 .about{
     /* center all content */
     margin-top: 4%;
