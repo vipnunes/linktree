@@ -33,25 +33,6 @@ Using Github Pages (Fork):
 4. Replace the default profile picture with your own image.
 5. Go to `Settings` then go to `Github Pages` (Or `Pages`) then go to `Branch`. `Main` and `/ (rooot)` now your website is runing in github pages!
 
-## Customization
-
-- Update the profile picture: Replace the image file in the `img` folder with your own profile picture. Make sure to maintain the same file name and format.
-- Modify the links: Open the `index.html` file and update the links in the HTML code. Replace the example URLs with your own URLs.
-- Customize the design: Open the `style.css` file to modify the CSS styles and customize the look and feel of the linktree.
-
-## Contribution
-
-Contributions to enhance the Personal Linktree project are welcome! If you have any suggestions or improvements, feel free to create a pull request.
-
-## Credits
-
-The user interface design is inspired by [Bio Link's](https://bio.link/) Retro Theme!
-And the user [aviiciii](https://github.com/aviiciii) for making the original repo!
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contact
 
 If you have any questions or need assistance with Personal Link-in-bio, please feel free to contact me at [hi@vipnunes.com](mailto:hi@vipnunes.com). I would be happy to help.
