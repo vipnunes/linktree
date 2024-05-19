@@ -1,168 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipnunes - Links</title>
+    <title>Vipnunes</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/11zon_cropped(1)" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
     <link rel="stylesheet" href="style.css">
+  </head>
 
-    <!-- favicon normal-->
-    <link rel="icon" href="img/11zon_cropped(1).png" type="image/jpg" >
-
-</head>
-<body>
-    <section id="about" class="about">
-        <div class="logo">
-            <img class="logo" src="img/11zon_cropped(1).png" alt="logo">
-        </div>
-        <div class="name">
-            <h1>vipnunes <img src="img/verify.svg" alt="" class="profile-image"></h1>
-        </div>
-        <div class="description">
-            <p>Hello, I'm Vipnunes! I am an ordinary person on the internet. &#58;&#41;	</p>
-        </div>
-        <div class="socials">
-            <ul class="socials-ul">
-                <!-- mail -->
-                <li class="socials-li">
-                    <a class="socials-a" href="mailto:hi@vipnunes.com" target="_blank">
-                        <img class="socials-img" width="50" height="50" src="https://img.icons8.com/?size=256&id=baRhMh2wmjbT&format=png" alt="github--v1"/>
-                    </a>
-                </li>
-                
-                <!-- github -->
-                <li class="socials-li">
-                    <a class="socials-a" href="https://github.com/vipnunes" target="_blank">
-                        <img class="socials-img" width="50" height="50" src="https://img.icons8.com/ios/50/github--v1.png" alt="github--v1"/>
-                    </a>
-                </li>
-                
-                <!-- youtube -->
-                <li class="socials-li">
-                    <a class="socials-a" href="https://youtube.com/vipnunes" target="_blank">
-                        <img class="socials-img" width="50" height="50" src="https://img.icons8.com/?size=256&id=15979&format=png" alt="github--v1"/>
-                    </a>
-                </li>
-
-                <!-- blog -->
-                <li class="socials-li">
-                    <a class="socials-a" href="https://blog.vipnunes.com" target="_blank">
-                        <img class="socials-img" width="50" height="50" src="https://img.icons8.com/?size=256&id=26072&format=png" alt="github--v1"/>
-                    </a>
-                </li>
-
-                <!-- roblox -->
-                <li class="socials-li">
-                    <a class="socials-a" href="https://www.roblox.com/users/1601069127/profile" target="_blank">
-                        <img class="socials-img" width="50" height="50" src="https://img.icons8.com/?size=256&id=62158&format=png" alt="github--v1"/>
-                    </a>
-                </li>
-                
-                <!-- add others here -->
-
-            </ul>
-        </div>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
     </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-    <section id="links">
+    <a id="profilePicture" href="#popup">
+      <img src="img/11zon_cropped(1)" alt="Profile Picture">
+    </a>
 
-        <!-- Start of a Tab -->
-        <div class="link-container">
-            
-            <!-- Start of links -->
-            <div class="link-list">
-                <a class="link-a" href="mailto:hi@vipnunes.com" target="_blank">
-                    E-mail
-                </a>
-            </div>
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="img/11zon_cropped(1)" target="_blank">
+            <img src="img/11zon_cropped(1)" alt="Profile Picture">
+          </a>
         </div>
-        <!-- End of a Tab -->
-
-
-        <!-- Start of a Tab -->
-        <div class="link-container">
-            
-            <div class="link-header">
-                <h2>Social Media</h2>
-            </div>
-
-            <!-- Start of links -->
-            <div class="link-list">
-                <a class="link-a" href="https://www.youtube.com/vipnunes" target="_blank">
-                    Youtube
-                </a>
-
-                <a class="link-a" rel='me' href="https://mastodon.social/@vipnunes" target="_blank">
-                    Mastodon
-                </a>
-
-                <a class="link-a" href="https://blog.vipnunes.com/" target="_blank">
-                    Blog (Portuguese)
-                </a>
-
-            </div>
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
         </div>
-        <!-- End of a Tab -->
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
 
+    <div id="userName">
+      vipnunes
+    </div>
 
-        <div class="link-container">
-            
-            <div class="link-header">
-                <h2>Games</h2>
-            </div>
+    <div id="links">
+      <a class="link" href="https://github.com/johnggli" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
+    </div>
 
-            <!-- Start of links -->
-            <div class="link-list">
-                <a class="link-a" href="https://www.roblox.com/users/1601069127/profile" target="_blank">
-                    Roblox
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="link-container">
-            
-            <div class="link-header">
-                <h2>Projects</h2>
-            </div>
-
-            <!-- Start of links -->
-            <div class="link-list">
-                <a class="link-a" href="https://vipnunes.com/search" target="_blank">
-                    Vipnunes Search
-                </a>
-                
-                <a class="link-a" href="https://i.vipnunes.com/" target="_blank">
-                    Link Shortener
-                </a>
-
-                <a class="link-a" href="https://planet-click.vipnunes.com/" target="_blank">
-                    PLanet Click
-                </a>
-                
-                <a class="link-a" href="https://cookies.vipnunes.com/" target="_blank">
-                    What are Cookies?
-                </a>
-
-                <a class="link-a" href="https://alex.vipnunes.com/" target="_blank">
-                    My Bird's Website (Portuguese)
-                </a>
-                
-            </div>
-        </div>
-
-
-    </section>
-
-    <section id="footer">
-        <footer> 
-            <p>&copy; Copyright <span id="copyright"></span>, vipnunes.com</p>
-        </footer>
-    </section>
-
-    <!-- scripts -->
-    
-    <script src="script.js"></script>
-
-</body>
+    <div id="hashtag">
+      vipnunes.com
+    </div>
+  </body>
 </html>
