@@ -6,12 +6,12 @@
     --background-color: #fcf7e9;
     --link-item-color: #efe7d2;
     --font-heading-color: #ffffff;
-    --font-body-color: #ffffff;
+    --font-body-color: #000000;
 
 }
 
 body{
-    background-image: url('https://vipnunes.com/files/gra.jpg');
+    background-color: #fcf7e9;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
