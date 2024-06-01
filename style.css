@@ -22,6 +22,10 @@ body {
     position: relative;
 }
 
+html, body {
+    overflow-y: hidden;
+}
+
 #profilePicture, #profilePicture img {
     position: relative;
     width: 96px;
