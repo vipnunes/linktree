@@ -21,10 +21,24 @@
     </section>
     <!-- End of Parallax Pixel Background Animation -->
 
-        <audio id="background-music" autoplay loop>
-        <source src="music.wav" type="audio/wav">
-         
+    <audio id="background-music" autoplay>
+    <source src="caminho/para/sua/musica.wav" type="audio/wav">
     </audio>
+    
+    <script>
+        // Função para repetir a música
+        function repeatMusic() {
+            var audio = document.getElementById("background-music");
+            audio.currentTime = 0; // Reinicia a música para o início
+            audio.play(); // Reproduz a música
+        }
+
+        // Evento para repetir a música quando terminar
+        document.getElementById("background-music").addEventListener("ended", function() {
+            repeatMusic();
+        });
+    </script>
+    
     
     <a id="profilePicture" href="#popup">
       <img src="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" alt="Profile Picture">
