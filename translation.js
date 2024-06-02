@@ -31,5 +31,23 @@ function detectLanguage() {
 // Chama a função de detecção de linguagem quando a página é carregada
 detectLanguage();
 
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph3').textContent = '🐦 Site do meu pássaro';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph3').textContent = '🐦 Sitio web de mi pájaro';
+    } else {
+        document.getElementById('languageParagraph3').textContent = "🐦 My Bird's Website";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+
 // Chama a função de tradução quando a página é carregada
 translateContent();
