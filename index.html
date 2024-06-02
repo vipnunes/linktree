@@ -20,6 +20,26 @@
       <div id="stars3"></div>
     </section>
     <!-- End of Parallax Pixel Background Animation -->
+    
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph').textContent = 'Olá, meu nome é Vipnunes! Sou uma pessoa comum na internet.';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph').textContent = '¡Hola soy Vipnunes! Soy una persona común y corriente en Internet.';
+    } else {
+        document.getElementById('languageParagraph').textContent = "Hello, I'm Vipnunes! I am an ordinary person on the internet.";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
 
     <audio id="background-music" autoplay>
     <source src="caminho/para/sua/musica.wav" type="audio/wav">
@@ -48,7 +68,7 @@
       vipnunes <img src="img/verify.svg" alt="" class="profile-image"> <!-- https://raw.githubusercontent.com/vipnunes/linktree/10146d3692ad155c3fbfb2a8dbbe58b24c93ca86/img/verify.svg -->
     </div>
 
-   <p class="txt">Hello, I'm Vipnunes! I am an ordinary person on the internet.</p>
+   <p class="txt" id="languageParagraph">Hello, I'm Vipnunes! I am an ordinary person on the internet.</p>
 
     <div id="links">
       <a class="link" href="mailto:hi@vipnunes.com" target="_blank">
