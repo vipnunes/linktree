@@ -20,6 +20,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #profilePicture, #profilePicture img {
