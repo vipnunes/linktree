@@ -20,11 +20,11 @@ function detectLanguage() {
     
     // Verifica a língua e atualiza o texto do parágrafo
     if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph3').textContent = '🐦 Site do meu pássaro';
+        document.getElementById('languageParagraph3').textContent = '🐦 Site da minha calopsita';
     } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph3').textContent = '🐦 Sitio web de mi pájaro';
+        document.getElementById('languageParagraph3').textContent = '🐦 Sitio web de mi cacatúa';
     } else {
-        document.getElementById('languageParagraph3').textContent = "🐦 My Bird's Website";
+        document.getElementById('languageParagraph3').textContent = "🐦 My Cockatiel's Website";
     }
 }
 
