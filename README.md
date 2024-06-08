@@ -1,4 +1,4 @@
-<img src="earth.png" alt="Vipnunes" class="profile-image">
+<img src="https://vipnunes.github.io/old-vipnunes/earth.png" alt="Vipnunes" class="profile-image">
 
 <h1 align="center">Hello 👋 i'm Vipnunes!</h1>
 <h3 align="center">A mini developer from Brazil thats speaks english and portuguese</h3>
