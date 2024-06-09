@@ -1,28 +1,47 @@
-<img src="https://vipnunes.github.io/old-vipnunes/earth.png" alt="Vipnunes" class="profile-image">
+# Shorten!
 
-<h1 align="center">Hello 👋 i'm Vipnunes!</h1>
-<h3 align="center">A mini developer from Brazil thats speaks english and portuguese</h3>
+The Shorten Web Application allows users to generate shortened URLs for their long URLs. It is a simple and easy-to-use tool built using FetchAPI, HTML, CSS, and JavaScript.
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vipnunes" alt="vipnunes" /></a> </p>
+## Features
 
-- 📫 My Website its [https://vipnunes.com](https://vipnunes.com/)
+- Generates short URLs for long URLs to make them more manageable and shareable.
+- Uses the [short.io](https://short.io/) API service to handle URL shortening and redirection.
+- Provides a clean and intuitive user interface for quick URL shortening.
 
-- 🌱 I’m currently learning **HTML**
+## Prerequisites
 
-- 👨‍💻 All of my projects are available at [https://vipnunes.com/projects](https://vipnunes.com/projects)
+Before getting started, make sure you have the following:
 
-- 📝 I regularly write articles in portuguese on [https://blog.vipnunes.com](https://blog.vipnunes.com)
+- A domain or subdomain to host the application.
+- Registration of your domain/subdomain with [short.io](https://short.io/). (Completely free of cost)
 
-- 📫 How to reach me **contato@vipnunes.com**
+Note: Preferably use a subdomain so it doesn't take up the whole domain ie. **link.example.com** instead of **example.com**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/vipnunes1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="vipnunes1" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/vipnunes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="vipnunes" height="30" width="40" /></a>
-<a href="https://discord.gg/JC3xbdzarY" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="JC3xbdzarY" height="30" width="40" /></a>
-</p>
+## Installation and Setup
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </p>
+1. Fork this repository to your GitHub account.
+2. Clone the forked repository to your local machine.
+3. Register your domain/subdomain with short.io to generate a public API key.
+4. Go to [api integrations](https://app.short.io/settings/integrations/api-key) in short.io and generate a public key.
+5. Open the `assets/script.js` file in a text editor.
+6. Replace the placeholder API key in the `'authorization'` field with your short.io API key.
+7. Rename the domain `'link.laavesh.ml'` to your own domain or subdomain in the following files:
+   - `index.html`
+   - `assets/script.js`
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=vipnunes&" alt="vipnunes" /></p>
+## Usage
+
+1. Deploy the application to your domain or subdomain.
+2. Visit your domain or subdomain in a web browser.
+3. Enter a long URL in the input field.
+4. Click on the "Shorten" button.
+5. The application will generate a shortened URL using the short.io API and display it to the user.
+6. Copy the shortened URL and use it wherever you need.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

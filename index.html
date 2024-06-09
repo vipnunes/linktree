@@ -1,155 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipnunes</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <head>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7LH3W5CSR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-      <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
+        gtag('config', 'G-P7LH3W5CSR');
+        </script>
 
-<audio src="https://vipnunes.com/music.wav">
-<p></p>
-</audio>
-    
-    <script>
-        // Função para repetir a música
-        function repeatMusic() {
-            var audio = document.getElementById("background-music");
-            audio.currentTime = 0; // Reinicia a música para o início
-            audio.play(); // Reproduz a música
-        }
 
-        // Evento para repetir a música quando terminar
-        document.getElementById("background-music").addEventListener("ended", function() {
-            repeatMusic();
-        });
-    </script>
-    
-    
-    <a id="profilePicture" href="#popup">
-      <img src="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" alt="Profile Picture">
-    </a>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
 
-    <div id="userName">
-      vipnunes <img src="img/verify.svg" alt="" class="profile-image"> <!-- https://raw.githubusercontent.com/vipnunes/linktree/10146d3692ad155c3fbfb2a8dbbe58b24c93ca86/img/verify.svg -->
-    </div>
+        <title>i.vipnunes.com</title>
+        <link rel="stylesheet" href="assets/styles.css" />
+        <link rel="icon" href="assets/favicon.png" />
+    </head>
 
-   <p class="txt" id="languageParagraph">Hello, I'm Vipnunes!</p>
+	<body>
+        <!-- preloader -->
+        <div class="preloader">
+            <span class="preloader-text">Loading...</span>
+        </div>
 
-    <div id="links">
-      <a class="link" href="mailto:hi@vipnunes.com" target="_blank">
-        ✉ E-mail
-      </a>
+        <!-- dark mode toggle -->
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <label for="dark-mode-toggle">🌙 Dark Mode</label>
+        </div>
 
-    <p class="txt">Socials</p>
-      
-      <a class="link" href="https://www.youtube.com/vipnunes" target="_blank">
-        ▶ Youtube
-      </a>
+        
 
-      <a rel='me' class="link" href="https://mastodon.social/@vipnunes" target="_blank">
-        🦏 Mastodon
-      </a>
+        <!-- form -->
+		<div class="login-box">
+            <img id="logo" src="assets/logo.png" alt="Shorten Logo">
 
-      <a class="link" href="https://blog.vipnunes.com" target="_blank">
-        📝 Blog
-      </a>
 
-     <p class="txt">Games</p>
-      
-     <a class="link" href="https://www.roblox.com/users/1601069127/profile" target="_blank">
-        🎮 Roblox
-      </a>
-      
-    <p class="txt"  id=languageParagraph2>My Github and My Projects</p>
-     
-     <a class="link" href="https://github.com/vipnunes" target="_blank">
-        🐈 Github
-      </a>
+			<form>
+                <!-- long url -->
+				<div class="user-box">
+					<input type="text" name="text" value id="linkinput" required="" autocomplete="off" />
+					<label>Link (Example: https://example.com)</label>
+				</div>
 
-    <a class="link" href="https://vipnunes.com/search" target="_blank">
-        🔍 Vipnunes - Search
-      </a>
+                <!-- path -->
+				<div class="user-box">
+					<input type="text" name="path" value id="pathinput" required="" autocomplete="off" />
+					<label>Slug (Example: i.vipnunes.com/slug)</label>
+				</div>
 
-          <a class="link" href="https://capixabapedia.vipnunes.com" target="_blank">
-        📖 Capixabapédia
-      </a>
-      
-     <a class="link" href="https://i.vipnunes.com/" target="_blank">
-        🔗 Link Shortener
-      </a>
+                <!-- button -->
+				<a href="javascript:void(0);" id="myinput" value="Shorten">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Shorten
+				</a>
+			</form>
 
-    <a class="link" href="https://vipnunes.com/planet-click" target="_blank">
-        🌎 Planet Click
-      </a>
-      
-    <a class="link" href="https://cookies.vipnunes.com/" target="_blank">
-        🍪 What are Cookies?
-      </a>
+            <br>
 
-    <a class="link" id=languageParagraph3 href="https://alex.vipnunes.com/" target="_blank">
-        🐦 My Cockatiel's Website
-      </a>
-      
-    <div id="hashtag">
-      vipnunes.com
-    </div>
-      
-<script>
-// Função para detectar a língua do navegador
-function detectLanguage() {
-    // Obtém o código da língua do navegador
-    var userLanguage = navigator.language || navigator.userLanguage;
-    
-    // Verifica a língua e atualiza o texto do parágrafo
-    if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph').textContent = 'Olá, meu nome é Vipnunes!';
-    } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph').textContent = '¡Hola soy Vipnunes!';
-    } else {
-        document.getElementById('languageParagraph').textContent = "Hello, I'm Vipnunes!";
-    }
-}
+            <!-- shortened url box -->
+            <div class="msg row">
+                <div class="column left">
+                    <p id="message">i.vipnunes.com/ </p>
+                </div>
+                <div class="column right">
+                    <button name="qr-btn" id="qr-btn"> <img id="qr"  src="assets/qr.png" alt="qr" /> </button>
+                    <button name="copy" id="copy"><img id="copy-to-clipboard" src="assets/copy.png" alt="copy"  /></button>
+                </div>
+            </div>
 
-// Chama a função de detecção de linguagem quando a página é carregada
-detectLanguage();
-</script>
+            <div id="github-logo" class="links">
+                <a href="https:///vipnunes.com">
+                    <img src="assets/favicon.png"/>
+                </a>
+            </div>
 
-<script>
-// Função para detectar a língua do navegador
-function detectLanguage() {
-    // Obtém o código da língua do navegador
-    var userLanguage = navigator.language || navigator.userLanguage;
-    
-    // Verifica a língua e atualiza o texto do parágrafo
-    if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph2').textContent = 'Meu Github e Meus Projetos';
-    } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph2').textContent = 'Mi Github y Mis Proyectos';
-    } else {
-        document.getElementById('languageParagraph2').textContent = "My Github and My Projects";
-    }
-}
+		</div>
 
-// Chama a função de detecção de linguagem quando a página é carregada
-detectLanguage();
-</script>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-<script src="translation.js"></script>
-      
-  </body>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"></span>
+                <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?data=https://i.vipnunes.com/&qzone=2&size=250x250&bgcolor=f1ede2" />
+            </div>
+        
+        </div>
+
+        <!-- link script -->
+        <script src="assets/script.js"></script>
+
+        
+
+	</body>
 </html>
