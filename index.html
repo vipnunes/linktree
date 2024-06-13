@@ -21,23 +21,9 @@
     </section>
     <!-- End of Parallax Pixel Background Animation -->
 
-<audio src="https://vipnunes.com/music.wav">
-<p></p>
+<audio autoplay loop>
+  <source src="https://vipnunes.com/music.wav" type="audio/mpeg">
 </audio>
-    
-    <script>
-        // Função para repetir a música
-        function repeatMusic() {
-            var audio = document.getElementById("background-music");
-            audio.currentTime = 0; // Reinicia a música para o início
-            audio.play(); // Reproduz a música
-        }
-
-        // Evento para repetir a música quando terminar
-        document.getElementById("background-music").addEventListener("ended", function() {
-            repeatMusic();
-        });
-    </script>
     
     
     <a id="profilePicture" href="#popup">
