@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+/* page color scheme */
+:root{
+	color-scheme: light dark;
+
+	--primary-color: #f1ede2;
+	--secondary-color: #615235;
+	--tertiary-color: #5e5e5e;
+	
+}
+
+/* write dark mode */
+/* @media screen and (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #222222;
+		--secondary-color: #f3e2b7 ;
+		--tertiary-color: #ffffff;
+	}
+	.msg{
+		background-color: #171717;
+		color: var(--secondary-color);
+	}
+} */
+
+/* dark mode colors */
+.dark-mode {
+	--primary-color: #222222;
+	--secondary-color: #f3e2b7;
+	--tertiary-color: #b7c9d8;
+	transition: background-color 0.5s ease-out;
+
+	.dark-mode-toggle{
+		color: var(--tertiary-color);
+	}
+}
+.dark-mode .msg{
+	background-color: #171717;
+	color: var(--tertiary-color);
+	
+}
+
+
+
+/* page layout */
+html {
+	height: 100%;
+}
+body {
+	/* preloader */
+	opacity: 0;
+	visibility: hidden;
+	transition: background-color 0.5s ease-in;
+
+	/* page layout */
+	margin: 0;
+	padding: 0;
+	font-family: 'VT323', monospace;
+	background-color: var(--primary-color);
+}
+
+/* center logo */
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	margin-bottom: 30px;
+
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	/* not draggable */
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+
+}
+
+
+/* form container */
+.login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 620px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+}
+
+.login-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: var(--tertiary-color);
+	text-align: center;
+}
+
+.login-box .user-box {
+	position: relative;
+}
+
+.login-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	color: var(--tertiary-color);
+	margin-bottom: 40px;
+	border: none;
+	border-bottom: 1px solid var(--tertiary-color);
+	outline: none;
+	background: transparent;
+}
+
+
+
+.login-box .user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 26px;
+	color: var(--tertiary-color);
+	pointer-events: none;
+	transition: 0.5s;
+
+	/* not selectable */
+	pointer-events: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: var(--secondary-color);
+	font-size: 16px;
+}
+
+.login-box form a {
+	position: relative;
+	display: inline-block;
+	padding: 18px 20px 15px 20px;
+	color: var(--secondary-color);
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-top: 16px;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+	/* not selectable */
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
+}
+
+.login-box a:hover {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	box-shadow: 0 0 4px var(--secondary-color), 0 0 16px var(--secondary-color), 0 0 40px var(--secondary-color), 0 0 100px var(--secondary-color);
+}
+
+.login-box a span {
+	position: absolute;
+	display: block;
+}
+
+.login-box a span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, var(--secondary-color));
+	animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+	0% {
+		left: -100%;
+	}
+	50%,
+	100% {
+		left: 100%;
+	}
+}
+
+.login-box a span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, var(--secondary-color));
+	animation: btn-anim2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+	0% {
+		top: -100%;
+	}
+	50%,
+	100% {
+		top: 100%;
+	}
+}
+
+.login-box a span:nth-child(3) {
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, var(--secondary-color));
+	animation: btn-anim3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+	0% {
+		right: -100%;
+	}
+	50%,
+	100% {
+		right: 100%;
+	}
+}
+
+.login-box a span:nth-child(4) {
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, var(--secondary-color));
+	animation: btn-anim4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+	0% {
+		bottom: -100%;
+	}
+	50%,
+	100% {
+		bottom: 100%;
+	}
+}
+
+/* link url display */
+.msg {
+	display: block;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	position: relative;
+	padding: 5px 20px;
+	font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+#message {
+	padding-top: 2px;
+}
+
+/* two columns for link and clipboard icon */
+.row {
+	display: flex;
+}
+.column {
+	float: left;
+}
+
+.left {
+	width: 80%;
+}
+
+.right {
+	width: 20%;
+	/* not selectable */
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	
+}
+
+/* clipboard icon */
+.column img {
+	padding: 10px;
+}
+.column button {
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background-color: inherit;
+}
+
+/* ref links */
+.links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	/* not selectable */
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	/* not draggable */
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+
+}
+
+.links a{
+	color: var(--primary-color);
+	font-size: 16px;
+	text-decoration: none;
+	padding: 6px 0px;
+	transition: 560ms;
+	
+}
+
+.links a:hover{
+	box-shadow: none;
+	background: none;
+}
+
+.links img{
+	width: 36px;
+	margin: 0 10px;
+	
+}
+
+
+	
+
+/* preloader */
+
+
+
+.preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.preloader-text {
+	color: #fff;
+	font-size: 24px;
+}
+
+/* dark mode toggle */
+
+.dark-mode-toggle{
+	color: var(--tertiary-color);
+	/* align to right */
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px 30px 10px 10px;
+	width: auto;
+	
+}
+
+/* copy to clipboard img */
+#copy{
+	width: fit-content;
+	padding: 0;
+	margin: 0;
+}
+#copy-to-clipboard{
+	width: 30px;
+}
+
+#qr{
+	width: 30px;
+}
+
+#qr-btn{
+	width: fit-content;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* modal */
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+	/* add blur */
+	backdrop-filter: blur(0.8px);
+  }
+  
+/* Modal Content/Box */
+.modal-content {
+	background-color: var(--primary-color);
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 6px;
+	border: 1px solid #888;
+	width: 270px; /* Could be more or less, depending on screen size */
+	height: 270px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dark-mode .modal-content {
+	background-color: #f1ede2;
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+	
+	.body{
+		max-width: 100vh;
+	}
+	
+	/* logo */
+	#logo {
+		width: 52vw;
+	}
+
+	.login-box {
+		margin-top: 6vh;
+		width: 80%;
+		padding: 0;
+		margin:40px auto;
+	}
+	
+
+	.login-box h2 {
+		font-size: 20px;
+	}
+	.login-box .user-box input {
+		font-size: 16px;
+	}
+	.login-box .user-box label {
+		font-size: 16px;
+	}
+	.login-box form a {
+		font-size: 20px;
+	}
+
+	/* message url */
+	.msg {
+		font-size: 14px;
+	}
+	#message {
+		padding-top: 6px;
+	}
+
+	/* dark mode toggle */
+	.dark-mode-toggle {
+		margin: 10px 10px 0px 0px;
+	}
+
+	#qr {
+		width: 22px;
+		padding: 5px;
+		margin-top: 8px;
+	}
+
+	#copy-to-clipboard {
+		width: 22px;
+		padding: 5px;
+	}
+
+	.left{
+		width: 70%;
+	}
+	.right{
+		width: 30%;
+	}
+
+
+.dark-mode-toggle{
+	color: var(--tertiary-color);
+	/* align to right */
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px 30px 10px 10px;
+	
+}
+
+
+/* highlight color */
+
+::selection {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+#message::selection {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.dark-mode ::selection{
+	background: var(--secondary-color);
+}
+
+.dark-mode #message::selection{
+	background: var(--tertiary-color);
+	color: var(--primary-color);
+}
+

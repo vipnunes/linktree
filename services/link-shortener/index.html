@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7LH3W5CSR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P7LH3W5CSR');
+        </script>
+
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark">
+
+        <title>i.vipnunes.com</title>
+        <link rel="stylesheet" href="assets/styles.css" />
+        <link rel="icon" href="assets/favicon.png" />
+    </head>
+
+	<body>
+        <!-- preloader -->
+        <div class="preloader">
+            <span class="preloader-text">Loading...</span>
+        </div>
+
+        <!-- dark mode toggle -->
+        <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle" />
+            <label for="dark-mode-toggle">🌙 Dark Mode</label>
+        </div>
+
+        
+
+        <!-- form -->
+		<div class="login-box">
+            <img id="logo" src="assets/logo.png" alt="Shorten Logo">
+
+
+			<form>
+                <!-- long url -->
+				<div class="user-box">
+					<input type="text" name="text" value id="linkinput" required="" autocomplete="off" />
+					<label>Link (Example: https://example.com)</label>
+				</div>
+
+                <!-- path -->
+				<div class="user-box">
+					<input type="text" name="path" value id="pathinput" required="" autocomplete="off" />
+					<label>Slug (Example: i.vipnunes.com/slug)</label>
+				</div>
+
+                <!-- button -->
+				<a href="javascript:void(0);" id="myinput" value="Shorten">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Shorten
+				</a>
+			</form>
+
+            <br>
+
+            <!-- shortened url box -->
+            <div class="msg row">
+                <div class="column left">
+                    <p id="message">i.vipnunes.com/ </p>
+                </div>
+                <div class="column right">
+                    <button name="qr-btn" id="qr-btn"> <img id="qr"  src="assets/qr.png" alt="qr" /> </button>
+                    <button name="copy" id="copy"><img id="copy-to-clipboard" src="assets/copy.png" alt="copy"  /></button>
+                </div>
+            </div>
+
+            <div id="github-logo" class="links">
+                <a href="https:///vipnunes.com">
+                    <img src="assets/favicon.png"/>
+                </a>
+            </div>
+
+		</div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close"></span>
+                <img id="qr-img" src="https://api.qrserver.com/v1/create-qr-code/?data=https://i.vipnunes.com/&qzone=2&size=250x250&bgcolor=f1ede2" />
+            </div>
+        
+        </div>
+
+        <!-- link script -->
+        <script src="assets/script.js"></script>
+
+        
+
+	</body>
+</html>
