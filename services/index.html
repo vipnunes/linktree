@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Serviços em Colunas</title>
+    <style>
+        /* Estilos simples para melhorar a apresentação */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: grid;
+            gap: 20px; /* Espaçamento entre os serviços */
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .servico {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none; /* Remove o sublinhado dos links */
+            display: block; /* Faz com que o link ocupe toda a largura da div */
+        }
+        .servico:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Efeito de sombra ao passar o mouse */
+        }
+        .servico h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .servico p {
+            color: #666;
+        }
+  .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .top-bar .site-name {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .top-bar .links {
+            display: flex;
+            gap: 20px;
+        }
+        .top-bar .links a {
+            color: white;
+            text-decoration: none;
+    </style>
+</head>
+<body>
+<div class="top-bar">
+        <div class="site-name">
+            <img src="https://vipnunes.com/img/11zon_cropped(1).png" type="image/png" alt="logo">
+            <span>Vipnunes</span>
+        </div>
+        <div class="links">
+            <a href="https://vipnunes.com">Home</a> -
+            <a href="https://blog.vipnunes.com">Blog</a> -
+            <a href="https://vipnunes.com/services/games">Games</a> -
+            <a href="https://vipnunes.com/services">Services</a> -
+
+            <a href="https://vipnunes.com/search/website">🔍</a>
+        </div>
+    </div>
+    <a href="https://vipnunes.com/search" class="servico">
+        <h2>Search</h2>
+        <p>A Search Engine powerd by Programable Search Bar by Google</p>
+    </a>
+
+    <a href="https://vipnunes.com/services/html/tester" class="servico">
+        <h2>HTML Tester</h2>
+        <p>Test a HTML code in Browser, inspired in TryIt editor by W3Schools</p>
+    </a>
+
+    <!-- Adicione mais serviços conforme necessário -->
+
+</body>
+</html>
