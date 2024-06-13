@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vipnunes - HTML Tester</title>
+<link rel="icon" href="https://vipnunes.com/img/11zon_cropped(1).png" type="image/x-icon">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  #editor, #preview {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+        .top-bar .site-name {
+            display: flex;
+            align-items: center;
+        }
+        .top-bar img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .top-bar .links {
+            display: flex;
+            gap: 20px;
+        }
+        .top-bar .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+</style>
+</head>
+<body>
+<div class="top-bar">
+        <div class="site-name">
+            <img src="https://vipnunes.com/img/11zon_cropped(1).png" type="image/png" alt="logo">
+            <span>Vipnunes</span>
+        </div>
+        <div class="links">
+            <a href="https://vipnunes.com">Home</a> -
+            <a href="https://blog.vipnunes.com">Blog</a> -
+            <a href="https://vipnunes.com/services/games">Games</a> -
+            <a href="https://vipnunes.com/services">Services</a> -
+
+            <a href="https://vipnunes.com/search/website">🔍</a>
+        </div>
+    </div>
+  <header>
+    <h1>HTML Tester</h1>
+  </header>
+  <main>
+    <section id="editor">
+      <h2>Editor</h2>
+      <textarea id="html-input" placeholder="Paste or Type a HTML code here"></textarea>
+      <button onclick="updatePreview()">Run HTML</button>
+    </section>
+    <section id="preview">
+      <h2>Visualization</h2>
+      <iframe id="preview-frame"></iframe>
+    </section>
+  </main>
+
+  <script>
+    function updatePreview() {
+      var htmlCode = document.getElementById('html-input').value;
+      var previewFrame = document.getElementById('preview-frame');
+      previewFrame.contentDocument.documentElement.innerHTML = htmlCode;
+    }
+  </script>
+</body>
+</html>
