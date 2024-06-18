@@ -1,116 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipnunes - Services</title>
-    <link rel="icon" href="https://vipnunes.com/img/11zon_cropped(1).png" type="image/x-icon">
-    <style>
-        /* Estilos para o cabeçalho */
-        .cabecalho {
-            background-color: #000000;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
+    <title>Vipnunes</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        /* Estilos para os serviços */
-        .servicos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas automáticas */
-            gap: 20px; /* Espaçamento entre os serviços */
-            padding: 20px;
-        }
+  </head>
 
-        .servico {
-            background-color: #fff;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-decoration: none; /* Remove o sublinhado dos links */
-            display: block; /* Faz com que o link ocupe toda a largura da div */
-        }
-
-        .servico:hover {
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Efeito de sombra ao passar o mouse */
-        }
-
-        .servico h2 {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .servico p {
-            color: #666;
-        }
-
-        body {
-            margin: 0;
-            font-family: sans-serif; /* Utiliza a fonte padrão sans-serif do navegador */
-            background-color: #f0f0f0;
-            padding: 0px;
-        }
-       .top-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 10px 20px;
-            color: white;
-        }
-        .top-bar .site-name {
-            display: flex;
-            align-items: center;
-        }
-        .top-bar img {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        .top-bar .links {
-            display: flex;
-            gap: 20px;
-        }
-        .top-bar .links a {
-            color: white;
-            text-decoration: none;
-    </style>
-</head>
-<body>
-    <div class="top-bar">
-        <div class="site-name">
-            <img src="https://vipnunes.com/img/11zon_cropped(1).png" type="image/png" alt="logo">
-            <span>Vipnunes</span>
-        </div>
-        <div class="links">
-            <a href="https://vipnunes.com">Home</a> -
-            <a href="https://blog.vipnunes.com">Blog</a> -
-            <a href="https://vipnunes.com/services/games">Games</a> -
-            <a href="https://vipnunes.com/services">Services</a> -
-
-            <a href="https://vipnunes.com/search/website">🔍</a>
-        </div>
-    </div>
+  <body>
     
-    <div class="cabecalho">
-        <h1>Services</h1>
+    <!-- Parallax Pixel Background Animation -->
+      <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+    
+    
+    <a id="profilePicture" href="#popup">
+      <img src="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" alt="Profile Picture">
+    </a>
+
+    <div id="userName">
+      vipnunes - websites <img src="img/verify.svg" alt="" class="profile-image"> <!-- https://raw.githubusercontent.com/vipnunes/linktree/10146d3692ad155c3fbfb2a8dbbe58b24c93ca86/img/verify.svg -->
     </div>
 
-    <div class="servicos">
-        <a href="https://vipnunes.com/search" class="servico">
-            <h2>Search</h2>
-            <p>A Search Engine powerd by Programable Search Bar by Google</p>
-        </a>
+   <p class="txt" id="languageParagraph">Hello, I'm Vipnunes!</p>
+   <p class="txt" id="languageParagraph">This is a page with my websites on internet.</p>
+    
+    <div id="links">
+      <a class="link" href="mailto:hi@vipnunes.com" target="_blank">
+        ✉ E-mail
+      </a>
+        
+    <div id="links">
+      <a class="link" href="https://vipnunes.com">
+        ⬅ Back to Vipnunes.com
+      </a>
 
-        <a href="https://vipnunes.com/services/html-tester" class="servico">
-            <h2>HTML Tester</h2>
-            <p>Test a HTML code in Browser, inspired in TryIt editor by W3Schools</p>
-        </a>
+    <p class="txt">Services</p>
+      
+      <a class="link" href="https://capixabapedia.vipnunes.com" target="_blank">
+        📖 Capixabapédia - A Enciclopédia Capixaba
+      </a>
 
-        <!-- Adicione mais serviços conforme necessário -->
+      <a rel='me' class="link" href="https://vipnunes.com/link-shortener" target="_blank">
+        🔗 Link Shortener
+      </a>
+        
+      <a class="link" href="https://blog.vipnunes.com" target="_blank">
+        🔍 Vipnunes Search
+      </a>
+
+      <a class="link" href="https://blog.vipnunes.com" target="_blank">
+        📝 Blog
+      </a>
+
+     <p class="txt">Games</p>
+      
+     <a class="link" href="https://vipnunes.com/i/ro" target="_blank">
+        🎮 Roblox (Profile)
+      </a>
+        
+      <a class="link" href="https://vipnunes.com/i/ro/group" target="_blank">
+        🎮 Roblox (Group)
+      </a>
+     
+     <a class="link" href="https://vipnunes.com/planet-click" target="_blank">
+        🌎 Planet Click
+      </a>
+        
+        <p class="txt">Other Websites</p>
+      
+    <a class="link" href="https://cookies.vipnunes.com/" target="_blank">
+        🍪 What are Cookies?
+      </a>
+
+    <a class="link" id=languageParagraph3 href="https://alex.vipnunes.com/" target="_blank">
+        🐦 My Cockatiel's Website
+      </a>
+      
+    <div id="hashtag">
+      vipnunes.com/services
     </div>
-
-</body>
+      
+  </body>
 </html>
