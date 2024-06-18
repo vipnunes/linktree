@@ -52,41 +52,25 @@
       <a class="link" href="https://blog.vipnunes.com" target="_blank">
         📝 Blog
       </a>
-
-     <p class="txt">Games</p>
-      
-     <a class="link" href="https://www.roblox.com/users/1601069127/profile" target="_blank">
-        🎮 Roblox
-      </a>
-      
-    <p class="txt"  id=languageParagraph2>My Github and My Projects</p>
-     
-     <a class="link" href="https://github.com/vipnunes" target="_blank">
+    
+      <a class="link" href="https://github.com/vipnunes" target="_blank">
         🐈 Github
       </a>
 
-    <a class="link" href="https://capixabapedia.vipnunes.com" target="_blank">
-        📖 Capixabapédia
-      </a>
-
-    <a class="link" href="https://vipnunes.com/search" target="_blank">
-        🔍 Vipnunes - Search
+     <p class="txt">Games</p>
+      
+     <a class="link" href="https://vipnunes.com/i/ro" target="_blank">
+        🎮 Roblox Profile
       </a>
       
-     <a class="link" href="https://vipnunes.com/link-shortener" target="_blank">
-        🔗 Link Shortener
-      </a>
-
-    <a class="link" href="https://vipnunes.com/planet-click" target="_blank">
-        🌎 Planet Click
+     <a class="link" href="https://vipnunes.com/i/ro/group" target="_blank">
+        🎮 Roblox Group
       </a>
       
-    <a class="link" href="https://cookies.vipnunes.com/" target="_blank">
-        🍪 What are Cookies?
-      </a>
+    <p class="txt"  id=languageParagraph2>My Projects and Websites</p>
 
-    <a class="link" id=languageParagraph3 href="https://alex.vipnunes.com/" target="_blank">
-        🐦 My Cockatiel's Website
+    <a class="link" id=languageParagraph4 href="https://vipnunes.com/services">
+        My Websites ➡
       </a>
       
     <div id="hashtag">
@@ -121,11 +105,31 @@ function detectLanguage() {
     
     // Verifica a língua e atualiza o texto do parágrafo
     if (userLanguage.startsWith('pt')) {
-        document.getElementById('languageParagraph2').textContent = 'Meu Github e Meus Projetos';
+        document.getElementById('languageParagraph2').textContent = 'Meus projetos e sites';
     } else if (userLanguage.startsWith('es')) {
-        document.getElementById('languageParagraph2').textContent = 'Mi Github y Mis Proyectos';
+        document.getElementById('languageParagraph2').textContent = 'Mis proyectos y sitios web';
     } else {
-        document.getElementById('languageParagraph2').textContent = "My Github and My Projects";
+        document.getElementById('languageParagraph2').textContent = "My Projects and Websites";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph4').textContent = 'Meus Websites ➡';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph4').textContent = 'Mis sitios web ➡';
+    } else {
+        document.getElementById('languageParagraph4').textContent = "My Websites ➡";
     }
 }
 
