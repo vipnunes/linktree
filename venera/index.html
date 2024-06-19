@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipnunes - Venera</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/vipnunes/linktree/main/img/11zon_cropped(1).png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    
+    <!-- Parallax Pixel Background Animation -->
+      <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+    
+    
+    <a id="profilePicture" href="#popup">
+      <img src="https://cdn.discordapp.com/avatars/1028020549227651113/864894468cc7686ed0730ccc990d93c7.png?size=2048" alt="Profile Picture">
+    </a>
+
+    <div id="userName">
+      Venera Discord Bot <img src="https://vipnunes.com/img/verify.svg" alt="" class="profile-image"> <!-- https://raw.githubusercontent.com/vipnunes/linktree/10146d3692ad155c3fbfb2a8dbbe58b24c93ca86/img/verify.svg -->
+    </div>
+
+   <p class="txt" id="languageParagraph">Hello, I'm Venera!</p>
+    
+    <div id="links">
+      <a class="link" href="mailto:hi@vipnunes.com" target="_blank">
+        💫 Owner Website
+      </a>
+      
+      <a class="link" href="https://discord.com/oauth2/authorize?client_id=1028020549227651113&permissions=8&integration_type=0&scope=bot target="_blank">
+        ➕ Add Me
+      </a>
+
+    <div id="hashtag">
+      More Things Soon!
+    </div>
+      
+    <div id="hashtag">
+      vipnunes.com/venera
+    </div>
+      
+<script>
+// Função para detectar a língua do navegador
+function detectLanguage() {
+    // Obtém o código da língua do navegador
+    var userLanguage = navigator.language || navigator.userLanguage;
+    
+    // Verifica a língua e atualiza o texto do parágrafo
+    if (userLanguage.startsWith('pt')) {
+        document.getElementById('languageParagraph').textContent = 'Olá, meu nome é Venera!';
+    } else if (userLanguage.startsWith('es')) {
+        document.getElementById('languageParagraph').textContent = '¡Hola soy Venera!';
+    } else {
+        document.getElementById('languageParagraph').textContent = "Hello, I'm Venera!";
+    }
+}
+
+// Chama a função de detecção de linguagem quando a página é carregada
+detectLanguage();
+</script>
+      
+  </body>
+</html>
